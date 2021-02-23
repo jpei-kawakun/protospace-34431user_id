@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="prototype__wrapper">
       <p class="prototype__hedding">
-        <%= "プロトタイプのタイトル"%>
+        <%= @prototype.title %>
       </p>
       <% if user_signed_in? %>
        <%= link_to @prototype.user.name, user_path(current_user.id), class: :prototype__user %>
